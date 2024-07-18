@@ -237,7 +237,7 @@ def print_report(report):
 
         payload = {'locations': locations, 'companies': sum(companies, []), 'jobs': sum(jobs, []), 'applications': sum(applications, []), 'listed': sum(listed, []), 'applied': sum(applied, []), 'applicants': sum(applicants, [])}
 
-        title1 = 'Summery Report on OraJobs'
+        title1 = 'Summery Report on Jofin'
         title2 = 'Report on Employers per Location'
 
         rendered = render_template("admin/reports/summery_pdf.html", title="Admin | Reports", user=user, payload=payload, title1=title1, title2=title2)

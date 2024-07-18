@@ -48,7 +48,7 @@ def send_pwd_reset_email(user, role, name):
     token = user.get_reset_token() 
 
     subject = 'Password Reset'
-    sender = ('OraJobs', 'saseda0@gmail.com')
+    sender = ('JoFin', 'thavamhabi123@gmail.com')
     recipients = [user.email]
 
     link = url_for(f'{role}.password_reset_link', token=token, _external=True)
@@ -63,7 +63,7 @@ def send_pwd_reset_email(user, role, name):
 def send_shortlist_email(email, obj):
 
     subject = 'You are Shortlisted'
-    sender = ('OraJobs', 'saseda0@gmail.com')
+    sender = ('Jofin', 'thavamhabi123@gmail.com')
     recipients = [email]
 
     jobs = url_for('jobs.job_list', _external=True)
